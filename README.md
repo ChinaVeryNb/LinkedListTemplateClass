@@ -1,4 +1,3 @@
-# LinkedListTemplateClass
 c++实现的链表模板类：
 18种函数：
 
