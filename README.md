@@ -45,11 +45,11 @@ c++实现的链表模板类：
 15 Retrieve(int index) – returns the data contained in node # index, does not delete it, returns null if index is out of bounds or data does not exist 
 
 //打印链表
-16 PrintList – Loop through each node and print the contents of the Node 
+16 PrintList() – Loop through each node and print the contents of the Node 
 
 //清空链表
-17 Empty – Empty out the list, delete everything 
+17 Empty() – Empty out the list, delete everything 
 
 
 //返回长度
-18 Length – How many elements are in the list
+18 Length() – How many elements are in the list
