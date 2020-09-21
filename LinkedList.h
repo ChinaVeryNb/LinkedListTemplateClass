@@ -33,7 +33,7 @@ private:
 
 //1 Constructor
 template <typename T>
-List<T>::List() //初始化两个节点:头和尾
+List<T>::List() 
 {
 	head = new Node<T>;
 	tail = new Node<T>;
@@ -56,11 +56,11 @@ List<T>::~List()
 		tail = nullptr;
 		return;
 	}
-	while (head->next != nullptr) // 从头开始删除 Node 指针
+	while (head->next != nullptr) 
 	{
 		Node<T> *temp = head;
 		head = head->next;
-		delete temp; // 删除原 head 内存空间
+		delete temp; 
 		temp = nullptr;
 	}
 	delete head;
@@ -359,7 +359,7 @@ void List<T>::PrintList()
 	while (p->next != tail)
 	{
 		p = p->next;
-		std::cout << p->data << " ";	
+		std::cout << p->data << " ";
 	}
 	std::cout << std::endl;
 }
